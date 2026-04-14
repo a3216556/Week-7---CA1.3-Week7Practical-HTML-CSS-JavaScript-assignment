@@ -2,7 +2,7 @@ function getNumbers() {
     let n1 = document.getElementById("num1").value;
     let n2 = document.getElementById("num2").value;
 
-    if (isNaN(n1) || isNaN(n2) || n1 === "" || n2 === "") {
+    if (n1 === "" || n2 === "" || isNaN(n1) || isNaN(n2)) {
         document.getElementById("result").innerHTML = "Invalid input";
         return null;
     }
